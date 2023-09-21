@@ -1,0 +1,42 @@
+## What is HTML?
+    - Hyper Text Markup Language
+    - It is NOT a programming language
+    - It is used to create webpages and documents
+
+## Tools/extensions required
+    - VSCode or other code editor
+    - Live Server extension
+    - Prettier extension
+
+## Tag Syntax
+    How do we write HTML Tags?
+
+    - Element names are surrounded by angle brackets // <div> </div> //
+    - Tag elements usually come in pairs (start and end tag)
+    - Some tags close themselves
+        - Examples:
+            - <h1>Frontend Simplified </h1>
+            - <br /> (self closing tag)
+            - <br> (this element is fine with HTML5)
+
+## Level Elements
+    Inline vs Block
+        - Block elements start on a new line and take the full width available
+        - Inline elements do not start on a new line and take only the necessary width
+            - BLOCK: <div>, <h1>, <p>
+            - INLINE: <span>, <a>, <button>
+
+## Anchor tags
+    Link to another URL or page
+        - target="_blank" will allow the link to open in a new tab
+
+## Lists
+    UL - Unordered List
+    LI - List Item
+    OL - Ordered List (rarely implemented)
+
+# Images
+    src="" - source
+        - src is where you tell the code to look for the image. Can be internal or a URL
+        - alt is what displays if a device etc does not display an image. It is usually a description of what the image is
+        - accessing folders inside or below current directory is done by using "./", going up a level is done by using "../"
