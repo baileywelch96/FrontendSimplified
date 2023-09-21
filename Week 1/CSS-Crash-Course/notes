@@ -1,0 +1,178 @@
+## What is CSS?
+
+    - Stands for Cascading Stylesheets
+    - Used to style websites
+
+## Methods for adding CSS
+
+    There are 3 methods for adding CSS
+        - Inline CSS
+            - style directly in the HTML element
+
+        - Internal CSS
+            - Using <style> tags within an HTML file
+
+        - External CSS (recommended)
+            - Linking an external CSS file
+                - link in the head tag of HTML using <link rel="stylesheet href="#"> where "#" is the location of your CSS file
+
+## Common Properties
+
+    Some examples of common CSS properties are:
+        - color
+        - background-color
+        - width
+        - height
+        - border
+        - font-size, font-weight, font-family
+
+    ## COLOR
+        - sets colour of your code of elements such as text, background etc
+            - use RGB, RGBA (alpha, which sets opacity), HEX or even words
+
+    ## WIDTH / HEIGHT
+        - sets the desired width and/or height of any element. These should not be hardcoded using pixel values. Only max-width or max-height should be hardcoded with a pixel value
+        - using percetage values allows your elements to render dynamically
+        - viewport heights/ widths are usually used for landing pages
+
+    ## BORDER
+        - sets borders around the element. usually set thickness using pixel values and can be styled (i.e solid, dashed, dotted etc)
+        - short-hand syntax is best practice
+
+    ## FONT
+        - allows changing of font family, font size and the weight of the font.
+        - Font weight and size can be set using numerical sizing or word sizing (i.e bold, semibold or 700)
+        - Fonts can be imported using a link tag in the head element of HTML but also in the CSS
+        - Fonts should also have a fall-back font for browsers or viewers that do not support fonts (i.e -> font-family: "Roboto", sans-serif;)
+
+## Specificity
+
+    Specificity is the prioritisation of styling
+
+    ## Classes
+    
+    Classes help target specific elements to style
+        - Classes are usually targeted with "." before the class name in the CSS
+        - Id's are usually targeted with "#" before the class name in the CSS
+        - Classes are prioritised over elements in the DOM
+        - Id's are used in the section tag - the allow quick movement to a specified section of the page
+        - using "!important" in the class style will override any styling that may be connected via another element or class
+
+## Box Model
+    
+    What is a box model?
+        - A container that consists of multiple different properties
+    
+    Box Model consists of:
+        - Content
+        - Padding
+        - Border
+        - Margin
+        - 37min
+
+## Complex Properties
+
+    There are two main complex properties in CSS
+        - Display
+        - Position
+
+    Display has two values
+        - Block
+            - Takes 100% of the width and starts on a new line
+            - These can be <p> and <div> tags for example
+        - Inline
+            - Does not allow you to set a width or height for element and starts on the same line
+            - These can be <span> and <img> tags for example
+
+## Position
+    
+    Here are some common position values in CSS
+
+        - Static (default)
+            - Follows the normal flow of the page
+        
+        - Relative
+            - Follows the normal flow of the page
+            - Lets you position using top, left, bottom and right
+        
+        - Absolute
+            - Does NOT follow the normal flow of the page
+            - Lets you position with top, left, bottom and right
+            - Position is based off closest "Position: Relative" parent
+    
+    Here are some uncommon position values in CSS
+
+        - Fixed
+            - Does NOT follow the normal flow of the page
+            - Lets you position with top, left, bottom and right
+            - Position is based off the viewport
+            - Sticks an element to a permanent position on the page
+
+        - Sticky
+            - Does NOT follow the normal flow of the page
+            - Lets you position with top, left, bottom and right
+            - Position is based off the viewport
+            - Sticks element to a permanent position on the page but only when the user scrolls to that threshold
+
+## Media Queries
+
+    Media queries are used to make web pages responsive
+
+        Comon break-points (max-width) for mobile devices
+            - 567px
+                - Mobile Phones
+            - 768px
+                - Tablets
+            - 992px
+                - Desktops
+            - 1200px
+                - Large Desktops
+
+## Extras (Psuedo selectors, Animations, BEM)
+
+    Psuedo Selectors:
+        There are two psuedo elements in CSS
+            - ::before
+                - Allows you to add content before an element
+            - ::after
+                - Allows you to add content after an element
+
+        There is also an auxillary class in CSS
+            - :hover
+                - Allows you to add styling to an element when the user hovers over it
+
+    Animations:
+        There are a few ways to trigger an animation in CSS
+            - Using @keyframes
+                - Allows you to create a custom animation
+            - Using transition
+                - Allows you to transition between two states of an element
+            - Using animation
+                - Allows you to create a custom animation
+        
+        Animations can be triggered by:
+            - Hover
+            - Click
+            - Page Load
+
+    BEM:
+
+        BEM stands for Block Element Modifier
+            - Block
+                - The parent element
+            - Element
+                - The child element
+            - Modifier
+                - The state of the element
+            
+        BEM (Block-Element-Modifier) is a naming convention for classes in CSS to make them more readable and understandable
+
+        BEM is a naming convention for classes in CSS
+            - Block
+                - .block
+            - Element
+                - .block__element
+            - Modifier
+                - .block__element--modifier
+    
+    
